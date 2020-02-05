@@ -1,0 +1,166 @@
+/* … */	ecrire un commentaire dans un fichier css										
+*	selecteur universel des balises										
+a b	selectionne toutes les balises b dans la balise a										
+a+b	selectionne la balise b qui suit la balise a										
+a[attribut]	selectionne la balise qui possede l attribut										
+a[attribut=« valeur »]	selectionne la balise qui possede l’attribut qui contient la valeur exacte 										
+a[attribut*=« valeur »]	selectionne la balise qui possede l’attribut qui contient dans sa valeur la valeur indiquer ou qu´elle soit										
+.nom_de_class	selectionne la class designé										
+#nom_de_id	selectionne l’id designé										
+font-size	taille en pixel ou en %										
+	xx-small	minuscule									
+	x-small	tres petit									
+	small	petit									
+	medium	moyen									
+	large	grand									
+	x-large	tres grand									
+	xx-large	gigantesque									
+	ou 1em	Taille 100%									
+	1.3em	130,00%									
+	0.8em	80,00%									
+Font-family	police1,police2,		attention si le nom de la police contient des espaces il faut le mettre entre des guillemets								
+	Arial										
+	Arial Black										
+	Comic sans MS										
+	Courrier New										
+	Georgia										
+	Impact										
+	Time New Roman										
+	Trebuchet MS										
+	Verdana										
+@font-face	police personnalisé										
+Font-family:’nom_de_la_police’											
+src : url (‘lien de la police.format1’)											
+src : url (‘lien de la police.format2’)											
+Font-style	style du texte										
+	normal										
+	italic										
+	oblique										
+Font-weight : bold	texte en gras										
+Text-decoration	decoration du texte										
+	underline	souligné									
+	Line-through	barré									
+	overline	ligne au-dessus									
+	blink	clignotant									
+	none	normal									
+Text-align	alignement du texte 										
+	left										
+	right										
+	center										
+	justify										
+float	rendre une image flottante										
+	left										
+	right										
+clear	enlever l'effet de flottement	à utiliser dans une balise différente de float									
+	left										
+	right										
+	both										
+color	couleur du texte de la balise										
+	nom de la couleur										
+	valeur hexadécimal #777777 (trouver sur paint ou par logiciel spécifique)										
+	notation rgb(255,255,255)  (trouver sur paint )										
+opacity	opacité de la balise										
+	De 0 (transparent) à 1 (opaque)										
+	ou notation rgba(255,255,255,1)										
+background	SUPER PROPRIETE qui viens remplacer les suivantes										
+Background-color	couleur de fond de balise ( couleur gérer de la même manière que le texte)										
+Background-image	applique une image sur le fond de la balise	en cas d'image multiple la 1er image sera superposée aux autres									
+Background-attachment	permet de fixer l'image de fond										
+	fixed	fixe									
+	scroll	défile avec le texte									
+Background-repeat	permet de repeter l'image										
+	No-repeat	l'image ne sera pas repeter									
+	Repeat-x	l'image sera repeter sur la 1er ligne horizontalement									
+	Repeat-y	l'image sera repeter sur la 1er colonne verticalement									
+	repeat	l'image sera repeter en mosaïque (par défault)									
+Background-position	position du fond 	à utiliser avec background-repeat									
+	valeur en pixel (30px, 50px) 30 de la gauche et 50 du haut	le point de reference étant l'angle supérieur gauche									
+	top	haut									
+	bottom	bas									
+	left	gauche									
+	right	droit									
+	center	centrer									
+border	SUPER PROPRIETE qui viens remplacer les suivantes										
+Border-width	largeur de la bordure										
+Border-color	couleur de la bordure										
+Border-style	style de la bordure										
+	none	pas de bordure (par default)									
+	solid	trait simple									
+	dotted	pointillé									
+	dashed	tirets									
+	double	bordure double									
+	groove	en relief									
+	ridge	autre effet de relief									
+	inset	effet 3D global enfoncé									
+	outset	effet 3D global surélevé									
+Border-top	bordure du haut	on utilise ensuite les propriètées de border									
+Border-bottom	bordure du bas	on utilise ensuite les propriètées de border									
+Border-left	bordure de gauche	on utilise ensuite les propriètées de border									
+Border-right	bordure de droite	on utilise ensuite les propriètées de border									
+Border-radius	arrondir les bordures										
+	valeur en pixel unique ( toutes les arrondis auront le mêmeangle )										
+	valeur en pixel multiple (haut gauche,haut droit,bas droit,bas gauche)										
+	valeur en pixel séparer par un slash ( créer des courbes elliptiques )										
+Border-collapse	bordure de tableau										
+	collapse	bordures collées									
+	Separate ( par défault )	bordure dissociées									
+Box-shadow	ombre de boite										
+	valeur en pixel multiple (decalage horizontale,decalage vertical,adoussissement,couleur)										
+	on peut rajouter la valeur inset pour avoir un ombrage interne										
+Text-shadow	valeur en pixel multiple (decalage horizontale,decalage vertical,adoussissement,couleur)										
+a:hover	Apparence survol d'un lien (text-decoration,color,font-style)										
+a:active	Apparence au moment du clic sur le lien (text-decoration,color,font-style)										
+a:focus	Apparence au moment de la selection du lien (text-decoration,color,font-style)										
+a:visited	Apparence si le lien a été visité (text-decoration,color,font-style)										
+width	largeur du block ( exprimer en pixel ou en % )										
+Min-width	largeur minimal du block ( exprimer en pixel ou en % )										
+Max-width	largeur maximal du block ( exprimer en pixel ou en % )										
+height	hauteur du block ( exprimer en pixel ou en % )										
+Min-height	hauteur minimal du block ( exprimer en pixel ou en % )										
+Max-height	hauteur maximal du block ( exprimer en pixel ou en % )										
+padding	marge interieur d'un block ( valeur unique ou multiple )										
+	Padding-top										
+	Padding-bottom										
+	Padding-left										
+	Padding-right										
+margin	marge exterieur d'un block ( valeur unique ou multiple )										
+	Margin-top										
+	Margin-bottom										
+	Margin-left										
+	Margin-right										
+	auto	centrer les block									
+overflow	couper un bloc										
+	visible (par default )	le texte dépasse									
+	hidden	le texte est coupé									
+	scroll	le texte peut être défilé									
+	auto	automatique									
+Word-wrap : break-word ;	permet de forcer la coupure des mots dans un block										
+display	permet de changer le type de block										
+	inline	ce place cote a cote									
+	block	ce place en dessous									
+	Inline-block	combine les 2 proprièté du dessus									
+	none	élément masqué									
+Vertical-align	permet de modifier l'alignement des éléments										
+	top	aligne en haut									
+	Baseline ( par défault )	aligne avec le parent									
+	middle	centre verticalement									
+	bottom	aligne en bas									
+	valeur en pixel ou %	aligne selon la valeur									
+position	permet de modifier la position d'un élément
+	sticky		permet de fixer l'élement a l'écran a partir d'un point donné(ex : top 0px quand l'element est a 0px de l'ecran il reste afficher et le reste scroll derriere)
+	absolute	place nimporte ou sur la page ( repere haut gauche de la page )	on rajoute les propriètées top,bottom,right,left par la suite								
+	fixed	en cas de défilement le block reste à sa place	on rajoute les propriètées top,bottom,right,left par la suite								
+	relative	deplace un block par rapport a sa position actuel ( repere haut gauche du block )	on rajoute les propriètées top,bottom,right,left par la suite								
+	Z-index	permet de superposé les block ( la valeur la plus haute est celle qui sera devant )									
+Text-transform	permet de modifier les caractere d'un texte										
+	uppercase	majuscule									
+	lowercase	minuscule									
+List-style-type: none ;	permet de retirer les puces des listes										
+Caption-side	placer le titre du tableau										
+	top										
+	bottom										
+:required	permet de changer l'apparence du champs obligatoire										
+:invalid	permet de changer l'apparence du champs invalide										
+:focus	permet de changer l'apparence du champs selectionné										
+
+@media screen and (max-width:1024px)											

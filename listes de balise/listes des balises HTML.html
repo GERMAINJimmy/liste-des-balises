@@ -1,0 +1,158 @@
+<!DOCTYPE html>	<!-- Indication du type de page (ex: html)-->						
+<html></html>	<!-- balise d'une page html ( début et fin )-->						
+<head></head>	<!-- balise de début de page-->						
+<meta charset="encodage utilisé" />	<!-- balise d'indication d'encodage de la page-->			
+<link rel=« stylesheet » href=« lien fichier css »>	<!-- lien ver le fichier css à placer dans la partie <head></head> du fichier .html-->						
+<title></title>	<!-- balise de délimitation du titre de la page-->						
+<script src=''adresse du fichier JS''></script>	<!-- balise de script-->						
+<body></body>	<!-- balise du corps de page-->						
+<header>< /header>	<!-- balise d'en-tête de page-->						
+<footer></footer>	<!-- balise de pied de page-->						
+<!-- ... -->	<!-- balise de commentaire-->						
+<p></p>	<!-- balise paragraphe-->						
+<br />	<!-- balise de sauter une ligne-->						
+<h1></h1> à <h6></h6>	<!-- balise de titre (1 : très important à 6 : pas important)-->			
+<em></em>	<!-- mettre des mots un peu en valeur-->						
+<strong></strong>	<!-- mettre des mots bien en valeur du texte (mot-clé pour moteur de recherche)-->						
+<mark></mark>	<!-- mettre une portion de texte en valeur-->						
+<nav></nav>	<!-- balise de délimitation de menu-->						
+<ul></ul>	<!-- délimite une liste non ordonnée (puce)-->						
+<ol></ol>	<!-- délimite une liste ordonnée (numéro)-->						
+<li></li>	<!-- délimite un élément d'une liste-->						
+<dl></dl>	<!-- délimite une liste de définitions-->						
+<dt></dt>	<!-- délimite les élément de la liste de définition-->						
+<dd></dd>	<!-- délimite la définition de l'élément de la liste-->	
+    
+<a href="lien du site ou de la page">nom du site</a>	
+    <!-- balise pour les liens	Si l'adresse de site contient des & il faut les remplacer par &amp;-->
+    
+<a href=« #nom_de_ancre »></a> <!-- attribut id =«nom_de_ancre »	balise pour créer une ancre-->						
+<a href=« lien de la page#nom_de_ancre »></a> 
+    <!-- attribut id =«nom_de_ancre »	balise pour créer un lien vers une ancre d’une autre page-->						
+<a href=« adresse du site » title=« texte infobulle »></a>	
+    <!-- créer une infobulle sur un lien-->	
+    
+<a href=« adresse du site » target=« _blank » rel="noopener"></a>	
+    <!-- ouvrir le lien dans une nouvelle page ou onglet selon le navigateur // rel="noopener noreferrer" pour firefox-->	
+    
+<a href=« mailto:adresse mail cible »></a>	<!-- envoi de mail-->						
+<a href=«lien vers le fichier »></a>	<!-- lancer le telechargement du fichier-->						
+<img src=« lien de l’image » alt=« description de l image »/>	<!-- insertion d une image	une image est imperativement inserer au sein d’un paragraphe-->					
+
+rajouter l’attribut title=« texte de l’infobulle »	Ajouter une infobulle a une image						
+<a href="lien de l’image"><img src=« lien de la miniature» alt=« description de l image »/></a>	
+    <!-- inserer une image miniature cliquable-->							
+
+<figure><img src=« lien de la miniature» alt=« description de l image »/></figure>	
+    <!--balise pour  inserer une figure ( illustration du texte)-->							
+
+<figure><img src=« lien de la miniature» alt=« description de l image »/><figcaptation></figcaptation></figure>	<!-- balise definition d’une figure-->							
+							
+<balise class=« nom_de_la_classe »>	
+    <!-- attribut à une balise un nom pour pouvoir l identifié (utilisable à l infini sur la page)-->							
+<balise id=« nom_de_l’id »>	
+    <!-- attribut à une balise un nom pour pouvoir l identifié (à usage unique sur la page)-->							
+<span></span>	<!-- permet de selectionner des mots ( comme strong ou em)-->							
+<div></div>	<!-- permet de créer un nouveau bloc-->							
+<section></section>	<!-- section de page-->							
+<aside></aside>	<!-- information complementaire	-->						
+<article></article>	<!-- englobe une portion autonome de page-->							
+<table></table>	<!--balise delimitation de tableau-->						
+<caption></caption>	<!--titre du tableau-->						
+<tr></tr>	<!--delimite une ligne du tableau-->						
+<th></th>	<!--délimite les colonnes titre du tableau-->						
+<td></td>	<!--delimite une colonne du tableau	-->	
+    
+	on rajoute l'attribut colspan=''n°'' pour la fusion des colonnes ( n° = nb de cellule fusionner)						
+	on rajoute l'attribut rowspan=''n°'' pour la fusion des lignes ( n° = nb de cellule fusionner)						
+<thead></thead>	<!--partie en-tête du tableau ( nécessaire pour les tableau complexe )-->						
+<tbody></tbody>	<!--partie corp du tableau ( nécessaire pour les tableau complexe )	-->					
+<tfoot></tfoot>	<!--partie pied du tableau ( nécessaire pour les tableau complexe )-->						
+<form></form>	<!--délimite un formulaire-->						
+<form method=''get''></form>	<!--limite à 255 caractère-->						
+<form method=''post''></form>	<!--illimité-->						
+<form action=''adresse du mail si envoie par mail ou page php pour envoi dans une base de donnée''></form>
+    <!--permet de définir l'action qu bouton du formulaire-->
+    
+<label></label>	<!-- permet de définir un libellé à une zone de saisie-->
+    
+	For="..."	attribue à rajouter pour lier le libellé à une zone de saisie
+    
+<input />	<!-- permet d'ajouter une fonction au formulaire-->						
+<input type="..."/>	<!-- défini le type de fonction rajouter-->					
+	text	<!-- création d'un champs texte monoligne-->	
+	password	<!-- création d'un champs pour mot de passe-->	
+	email	<!-- création d'un champs pour email-->	
+	url	<!-- création d'un champs url-->	
+	tel	<!-- création d'un champs pour n° tel-->	
+	number	<!-- création d'un champs pour saisir une valeur-->	
+		min	<!-- attribut suppl pour saisir la valeur minimal-->	
+		max	<!-- attribut suppl pour saisir la valeur maximal-->	
+		step	<!-- attribut suppl pour saisir la valeur de pas ( 2 en 2,...)-->	
+	range	<!-- création d'un champs pour afficher un curseur-->	
+		min	<!-- attribut suppl pour saisir la valeur minimal-->	
+		max	<!-- attribut suppl pour saisir la valeur maximal-->	
+		step	<!-- attribut suppl pour saisir la valeur de pas ( 2 en 2,...)-->	
+	color	<!-- création d'un champs pour saisir une couleur-->	
+	date	<!-- création d'un champs pour saisir une date (00/00/0000)-->	
+	time	<!-- création d'un champs pour saisir une heure (00:00)	-->	
+	week	<!-- création d'un champs pour saisir la semaine-->	
+	month	<!-- création d'un champs pour saisir le mois-->	
+	datetime	
+    <!-- création d'un champs pour saisir la date et l'heure ( prise en compte du décalage horaire )-->	
+	Datetime-local	
+    <!-- création d'un champs pour saisir la date et l'heure (  prise en compte du décalage horaire )-->	
+	search	<!-- création d'un champs de recherche-->	
+	checkbox	<!-- création d'une case a cocher ( choix multiple )-->	
+		checked	<!-- Attribut de case cocher par défault-->	
+	radio	<!-- création d'une case a cocher ( choix unique )	ATTENTION pour que la selection soit unique il faut que les choix soit regroupe sous le meme name-->	
+		checked	<!-- Attribut de case cocher par défault-->	
+	submit	<!-- création d'un bouton-->	
+		Value=''...''	<!-- Attribut dont la valeur donne un nom au bouton-->	
+		Action=''...''	<!-- Attribut dont la valeur donne le lien de redirection du visiteur-->	
+	reset	<!-- bouton de reset du formulaire-->	
+	image	<!-- même utilisation que submit mais cette fois-ci le bouton sera remplacer par une image ( rajout de  l'attribut src=''...'' )-->	
+	button	<!-- utilisation pour JS-->	
+    
+<input name=''...''/>	<!-- permet de donner un nom a la zone de saisie-->						
+<input id=''...''/>	<!-- permet de lier la zone de saisie au libellé-->						
+<input size=''...''/>	<!-- permet de définir la taille de la zone de saisie-->						
+<input maxlength=''...''/>	<!-- permet de définir la limite de caractère de la zone de saisie-->						
+<input value=''...''/>	<!-- permet de pré-remplir la zone de saisie-->						
+<input placeholder=''...''/>	<!-- permet d'indiquer le contenu (disparaît a la selection de la zone)-->						
+<textarea></textarea>							
+<textarea name=''...''></textarea>	<!-- permet de donner un nom a la zone de saisie-->						
+<textarea id=''...''></textarea>	<!-- permet de lier la zone de saisie au libellé-->						
+<textarea rows=''...''></textarea>	<!-- permet de définir la taille de la zone de saisie en largeur	peut etre fait aussi en CSS avec les propriètées (width,height)-->					
+<textarea cols=''...''></textarea>	<!-- permet de définir la taille de la zone de saisie en hauteur	peut etre fait aussi en CSS avec les propriètées (width,height)-->					
+<select></select>	<!-- permet de créer une liste déroulante-->						
+<option value=''...''></option>	<!-- encadre le choix de la liste déroulante	ATTENTION l'attribut value doit contenir la meme valeur que le choix-->					
+		selected	<!-- Attribut de case cocher par défault-->				
+<optgroup label=''...''></optgroup>	<!-- permet de regrouper plusieurs choix-->						
+<fieldset></fieldset>	<!-- permet de regrouper les champs du formulaire-->						
+<legend></legend>	<!-- permet de donner un titre au groupe de champs du formulaire-->						autofocus	<!-- permet de cibler un champs au chargement de la page-->						
+        required	<!-- permet de rendre le champs obligatoire-->		
+    
+<audio src="..."></audio>	<!-- permet d’intégrer un élément audio ( si le navigateur ne reconnais pas le format il affichera le message )-->						
+		controls	<!-- affiche les controles-->				
+		width	<!-- delimite la largeur du lecteur-->				
+		loop	<!-- la musique sera jouer en boucle-->				
+		autoplay	<!-- la musique sera jouer dès le chargement de la page-->				
+		preload	permet à la musique d'être précharger avec la page-->				
+			auto (par défault)	<!-- choix effctuer pour le chargement par le navigateur-->			
+			metadata	<!-- charge uniquement les metadonnées-->			
+			none	<!-- pas de prechargement-->			
+<source src="..."></source>	<!-- permet en cas de format multiple de donner plusieurs source-->						
+<video src="..."></video>	<!-- permet d’intégrer un élément video ( si le navigateur ne reconnais pas le format il affichera le message )-->						
+		poster	<!-- affiche une image à la place de la vidéo en attendant son lancement-->			
+		controls	<!-- affiche les controles-->				
+		width	<!-- delimite la largeur du lecteur-->				
+		height	<!-- delimite la hauteur du lecteur-->				
+		loop	<!-- la musique sera jouer en boucle-->				
+		autoplay	<!-- la musique sera jouer dès le chargement de la page-->				
+		preload	<!-- permet à la musique d'être précharger avec la page-->				
+			auto <!-- (par défault)	choix effctuer pour le chargement par le navigateur-->			
+			metadata	<!-- charge uniquement les metadonnées-->			
+			none	<!-- pas de prechargement-->			
+<source src="..."></source>	<!-- permet en cas de format multiple de donner plusieurs sources	ATTENTION pour une compatibilité maximal le format .mp4 doit etre mis en premier-->					
+	<object></object> 	<!-- balise permettant d'integrer des object comme des fichier pdf -->
